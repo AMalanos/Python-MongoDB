@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flights</title>
+</head>
+<body>
+    <h1>Flights</h1>
+    <ul>
+        {% for flight in flights %}
+            <li>
+                <strong>Flight ID:</strong> {{ flight._id }}<br>
+                <strong>Start:</strong> {{ flight.start }}<br>
+                <strong>Stop:</strong> {{ flight.stop }}<br>
+                <strong>Flight Date:</strong> {{ flight.flight_date }}<br>
+                <strong>Economy Price:</strong> {{ flight.economy_price }}<br>
+                <strong>Business Price:</strong> {{ flight.business_price }}<br>
+                <strong>Economy Seats:</strong> {{ flight.economy_seats }}<br>
+                <strong>Business Seats:</strong> {{ flight.business_seats }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
